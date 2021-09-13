@@ -162,13 +162,13 @@ section div p {
 .section-top {
   position: relative;
   overflow: hidden;
-  padding: 5rem 0 13rem 0;
+  padding: 5rem 0 16rem 0;
 }
 .section-top img {
   position: absolute;
-  width: 50%;
-  left: 65%;
-  top: 15%;
+  width: 45%;
+  left: 68%;
+  top: 13%;
 }
 
 .section-mid {
@@ -177,7 +177,7 @@ section div p {
   display: flex;
   justify-content: space-between;
   position: relative;
-  background: url("./images/bg-pattern-circles.svg") top -550px left -200px /
+  background: url("./images/bg-pattern-circles.svg") top -550px left -140px /
       1000px no-repeat,
     linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
   border-radius: 0 70px 0 70px;
@@ -187,7 +187,7 @@ section div p {
   position: absolute;
   top: -18%;
   left: 15%;
-  width: 32%;
+  width: 25%;
 }
 .section-mid h3,
 .section-mid p {
@@ -202,13 +202,14 @@ section div p {
 .section-bottom {
   position: relative;
   overflow: hidden;
-  padding: 5rem 0 16rem 0;
+  padding: 10rem 0 16rem 0;
 }
 
 .section-bottom img {
   position: absolute;
-  left: -16%;
-  width: 55%;
+  top: 10%;
+  left: -13%;
+  width: 45%;
 }
 
 .section-bottom {
@@ -233,7 +234,6 @@ footer {
 footer div:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-items: center;
 }
 
 footer ul {
@@ -241,5 +241,5 @@ footer ul {
 }
 
 footer ul li {
-  margin: 10px 0;
+  margin: px 0;
 }
