@@ -17,19 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Frontend Mentor | [Blogr]</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <script
       src="https://kit.fontawesome.com/18f1061d8a.js"
       crossorigin="anonymous"
@@ -37,45 +27,49 @@
   </head>
   <body>
     <header>
-      <nav class="container">
-        <div class="box-left">
-          <span class="box-left__logo"
-            ><img src="./images/logo.svg" alt="" srcset=""
-          /></span>
-          <ul class="box-left__links">
-            <li>
-              Product <i class="fas fa-chevron-down"></i>
-              <!--<ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul> -->
-            </li>
-            <li>
-              Company <i class="fas fa-chevron-down"></i>
-              <!--<ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul> -->
-            </li>
-            <li>
-              Connect <i class="fas fa-chevron-down"></i>
-              <!--<ul>
-              <li>Contact</li>
-              <li>Newsletter </li>
-              <li>LinkedIn</li>
-            </ul>-->
-            </li>
-          </ul>
-        </div>
-        <div class="box-right">
-          <div class="box-right__login">
-            <button>Login</button>
-            <button>Sign Up</button>
+      <nav>
+        <div class="box">
+          <span class="box__logo"><img src="./images/logo.svg" alt="" /></span>
+
+          <button class="box__button">
+            <img class="icon-open" src="./images/icon-hamburger.svg" alt="" />
+            <img src="./images/icon-close.svg" alt="" />
+          </button>
+
+          <div class="box__menu">
+            <ul>
+              <li>
+                <span>Product <i class="fas fa-chevron-down"></i></span>
+                <ul>
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </li>
+              <li>
+                <span>Company <i class="fas fa-chevron-down"></i></span>
+                <ul>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </li>
+              <li>
+                <span>Connect <i class="fas fa-chevron-down"></i></span>
+                <ul>
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="menu__login">
+              <button>Login</button>
+              <button>Sign Up</button>
+            </div>
           </div>
         </div>
       </nav>
@@ -91,8 +85,17 @@
 
     <section class="section-top">
       <h2>Designed for the future</h2>
-      <img src="./images/illustration-editor-desktop.svg" alt="" />
-      <div class="container">
+      <img
+        class="mobile"
+        src="./images/illustration-editor-mobile.svg"
+        alt=""
+      />
+      <img
+        class="desktop"
+        src="./images/illustration-editor-desktop.svg"
+        alt=""
+      />
+      <div class="">
         <h3>Introducing an extensible editor</h3>
         <p>
           Blogr features an exceedingly intuitive interface which lets you focus
@@ -113,9 +116,9 @@
     </section>
     <section class="section-mid">
       <div class="section-mid__img">
-        <img src="./images/illustration-phones.svg" alt="" srcset="" />
+        <img src="./images/illustration-phones.svg" alt="" />
       </div>
-      <div class="container">
+      <div class="">
         <h3>State of the Art Infrastructure</h3>
         <p>
           With reliability and speed in mind, worldwide data centers provide the
@@ -127,10 +130,18 @@
     </section>
 
     <section class="section-bottom">
-      <div class="section-bottom__img">
-        <img src="./images/illustration-laptop-desktop.svg" alt="" />
-      </div>
-      <div class="container">
+      <img
+        class="mobile"
+        src="./images/illustration-laptop-mobile.svg"
+        alt=""
+      />
+      <img
+        class="desktop"
+        src="./images/illustration-laptop-desktop.svg"
+        alt=""
+      />
+
+      <div class="">
         <h3>Free, open, simple</h3>
         <p>
           Blogr is a free and open source application backed by a large
@@ -150,8 +161,8 @@
     </section>
 
     <footer>
-      <div class="container">
-        <div class="logo"><img src="./images/logo.svg" alt="" srcset="" /></div>
+      <div class="">
+        <div class="logo"><img src="./images/logo.svg" alt="" /></div>
         <div class="product">
           <span>Product</span>
           <ul>
@@ -182,17 +193,13 @@
       </div>
     </footer>
 
-    <!--    
-   
-      Product Overview Pricing
-    Marketplace Features Integrations Company About Team Blog Careers Connect
-    Contact Newsletter LinkedIn
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Leonardo Burtet</a>.
     </div>
-  --></body>
+
+    <script src="/script/script.js"></script>
+  </body>
 </html>

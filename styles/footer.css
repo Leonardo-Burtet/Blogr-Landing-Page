@@ -1,0 +1,37 @@
+/* FOOTER */
+
+footer {
+  position: relative;
+  background-color: hsl(240, 10%, 16%);
+  padding: 70px 0;
+  border-radius: 0 70px 0 0;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+footer .logo {
+  padding-bottom: 50px;
+}
+
+footer div span {
+  color: #ffffff;
+}
+
+footer ul {
+  padding: 5px 0 20px 0;
+}
+
+footer ul li {
+  margin: 10px 0;
+  color: rgb(146, 145, 145);
+}
+
+.attribution {
+  background-color: hsl(240, 10%, 16%);
+  font-size: 11px;
+  text-align: center;
+  padding: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

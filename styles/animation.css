@@ -1,0 +1,29 @@
+/* Animation */
+
+.icon-open {
+  animation: menu-icon-open 0.4s forwards;
+}
+.icon-close {
+  animation: menu-icon-close 0.4s forwards;
+}
+
+.show {
+  display: block !important;
+}
+@keyframes menu-icon-close {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: rotateZ(90deg);
+    opacity: 0;
+  }
+}
+@keyframes menu-icon-open {
+  from {
+    transform: rotateZ(90deg);
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,252 @@
+@media (min-width: 1440px) {
+  /* HEADER */
+  header {
+    height: 600px;
+    background: url(../images/bg-pattern-intro.svg) top -1000px right -600px /
+        2300px no-repeat,
+      linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  }
+  nav {
+    width: 80%;
+  }
+
+  nav .box {
+    padding: 10px;
+  }
+
+  nav .box__logo {
+    padding: 15px 20px 0 0;
+  }
+
+  nav .box__button {
+    display: none;
+  }
+
+  nav .box__menu {
+    position: relative;
+    opacity: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    background-color: transparent;
+    box-shadow: none;
+    transition: none;
+    padding: 10px 0 0 0;
+  }
+
+  nav .box__menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav .box__menu ul li span {
+    color: #ffffff;
+  }
+
+  nav .box__menu .menu__login {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  nav .menu__login button:first-child {
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  nav .menu__login button:last-child {
+    background: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+  }
+
+  nav .box__menu .menu__login::before {
+    display: none;
+  }
+
+  .action {
+    width: 100%;
+  }
+
+  .action h1 {
+    font-size: 4em;
+  }
+
+  .action h2 {
+    font-size: 1.5em;
+  }
+
+  /* SECTIONS */
+
+  /* TOP */
+  .section-top {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 12em 0;
+  }
+
+  .section-top h2 {
+    font-size: 3em;
+  }
+  .section-top .mobile {
+    display: none;
+  }
+
+  .section-top .desktop {
+    display: block;
+    position: absolute;
+    top: 240px;
+    right: -300px;
+    width: 60%;
+  }
+
+  .section-top div {
+    width: 52%;
+    padding-left: 200px;
+    text-align: left;
+  }
+
+  .section-top div h3 {
+    font-size: 2em;
+    padding: 50px 0 25px 0;
+  }
+  .section-top div p {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  /* MID */
+  .section-mid {
+    margin: 20px 0;
+    padding: 30px 50px;
+    background-color: hsl(237, 17%, 21%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    background: url("../images/bg-pattern-circles.svg") top -450px left -200px /
+        900px no-repeat,
+      linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0 70px 0 70px;
+  }
+
+  .section-mid__img {
+    position: relative;
+    width: 100%;
+  }
+
+  .section-mid__img img {
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    width: 550px;
+  }
+
+  .section-mid div {
+    padding: 40px 0;
+    width: 45%;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+  }
+
+  .section-mid p {
+    color: hsl(0, 0%, 100%);
+    width: 70%;
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .section-mid h3 {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    padding: 40px 0;
+  }
+
+  /* BOT */
+
+  .section-bottom {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    padding: 15em 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .section-bottom .mobile {
+    display: none;
+  }
+
+  .section-bottom .desktop {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -440px;
+    width: 90%;
+  }
+
+  .section-bottom div {
+    width: 52%;
+    padding-left: 85px;
+    text-align: left;
+  }
+
+  .section-bottom div h3 {
+    font-size: 2em;
+    padding: 50px 0 25px 0;
+  }
+  .section-bottom div p {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  /* Footer */
+
+  footer {
+    position: relative;
+    background-color: hsl(240, 10%, 16%);
+    padding: 70px 0;
+    border-radius: 0 70px 0 0;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+
+  footer div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+  }
+
+  footer .logo {
+    padding: 0;
+  }
+
+  footer div span {
+    color: #ffffff;
+  }
+
+  footer ul {
+    padding: 5px 0 20px 0;
+  }
+
+  footer ul li {
+    margin: 10px 0;
+    color: rgb(146, 145, 145);
+  }
+
+  .attribution {
+    background-color: hsl(240, 10%, 16%);
+    font-size: 11px;
+    text-align: center;
+    padding: 15px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
