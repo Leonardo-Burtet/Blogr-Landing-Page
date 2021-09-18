@@ -10,6 +10,12 @@
 .show {
   display: block !important;
 }
+
+.icon-rotate {
+  transition: 1s;
+  animation: menu-icon-list 0.1ms forwards;
+}
+
 @keyframes menu-icon-close {
   from {
     opacity: 1;
@@ -25,5 +31,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes menu-icon-list {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes menu-icon-list-down {
+  to {
+    transform: rotate(0deg);
   }
 }

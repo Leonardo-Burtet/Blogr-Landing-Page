@@ -64,6 +64,26 @@
     display: none;
   }
 
+  nav .box__menu ul li ul {
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 15px 0;
+    color: hsl(237, 23%, 32%);
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: left;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  nav .box__menu ul li ul li:hover {
+    color: #000000;
+  }
+  .show {
+    position: absolute;
+  }
+
   .action {
     width: 100%;
   }
