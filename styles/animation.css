@@ -12,8 +12,8 @@
 }
 
 .icon-rotate {
-  transition: 1s;
   animation: icon-list 0.1ms forwards;
+  transition: 1s;
 }
 
 @keyframes menu-icon-close {
