@@ -1,13 +1,13 @@
 export default function navMenu() {
-  const menuSpan = document.querySelectorAll(".box__menu ul span");
-  const menuUl = document.querySelectorAll(".box__menu ul li ul");
-  const menuIcon = document.querySelectorAll(".box__menu ul li i");
+  const menuSpan = document.querySelectorAll(".box__menu__list span");
+  const menuIcon = document.querySelectorAll(".box__menu__list  i");
+  const menuUl = document.querySelectorAll(".box__menu__links");
 
   menuSpan.forEach((element) => {
-    element.addEventListener("click", handleClickDesktop);
+    element.addEventListener("click", handleClickMenu);
   });
-  function handleClickDesktop() {
-    console.log(this.classList);
+
+  function handleClickMenu() {
     if (this.classList[0] === "ativo") {
       this.classList.remove("ativo");
       this.nextElementSibling.classList.remove("show");

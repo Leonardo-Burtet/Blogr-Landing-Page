@@ -1,8 +1,8 @@
 export default function btnMobile() {
-  const menuMobile = document.querySelector(".box__button");
-  const menuButton = document.querySelectorAll(".box__button img");
+  const menuMobile = document.querySelector(".box__btn");
+  const menuButton = document.querySelectorAll(".box__btn img");
   const menuBox = document.querySelector(".box__menu");
-  const menuUl = document.querySelector(".box__menu ul");
+  const menuList = document.querySelector(".box__menu__list");
 
   menuMobile.addEventListener("click", handleClickMenu);
 
@@ -12,13 +12,13 @@ export default function btnMobile() {
         element.className = "icon-close";
         menuBox.style.opacity = 0;
         menuBox.style.transition = "0.5s";
-        menuUl.style.opacity = 0;
-        menuUl.style.transition = "0.3s";
+        menuList.style.opacity = 0;
+        menuList.style.transition = "0.3s";
       } else {
         element.className = "icon-open";
         menuBox.style.opacity = 1;
-        menuUl.style.opacity = 1;
-        menuUl.style.transition = "2s";
+        menuList.style.opacity = 1;
+        menuList.style.transition = "2s";
       }
     });
   }

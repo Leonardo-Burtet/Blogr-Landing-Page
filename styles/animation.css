@@ -13,7 +13,7 @@
 
 .icon-rotate {
   transition: 1s;
-  animation: menu-icon-list 0.1ms forwards;
+  animation: icon-list 0.1ms forwards;
 }
 
 @keyframes menu-icon-close {
@@ -34,13 +34,8 @@
   }
 }
 
-@keyframes menu-icon-list {
+@keyframes icon-list {
   to {
     transform: rotate(-180deg);
-  }
-}
-@keyframes menu-icon-list-down {
-  to {
-    transform: rotate(0deg);
   }
 }

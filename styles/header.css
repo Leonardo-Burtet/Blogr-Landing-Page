@@ -1,128 +1,131 @@
 /* Header */
 header {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   background: url(../images/bg-pattern-intro.svg) top -350px right -600px /
       1300px no-repeat,
     linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   border-bottom-left-radius: 100px;
-  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  justify-content: space-between;
+  padding: 40px 30px;
+  position: relative;
+  width: 100%;
 }
 
 nav {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
   width: 100%;
   z-index: 2;
-  position: relative;
 }
 
 nav .box {
-  position: relative;
   display: flex;
   justify-content: space-between;
+  position: relative;
   width: 100%;
 }
 
-nav .box__button {
-  position: relative;
+nav .box__btn {
   background-color: transparent;
   border: none;
+  position: relative;
 }
 
-nav .box__button img:last-child {
-  position: absolute;
-  top: 7px;
-  right: 2px;
+nav .box__btn img:last-child {
   opacity: 0;
+  position: absolute;
+  right: 2px;
+  top: 7px;
 }
 
 nav .box__menu {
-  position: absolute;
-  top: 70px;
   background-color: hsl(0, 0%, 100%);
-  width: 100%;
   border-radius: 5px;
-  text-align: center;
-  padding: 30px;
-  opacity: 0;
-  transition: 1s;
+  box-shadow: 2px 5px 10px 1px #00000056;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 2px 5px 10px 1px #00000056;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  transition: 1s;
+  text-align: center;
+  top: 70px;
+  width: 100%;
   z-index: 100;
 }
 
-nav .box__menu ul li {
+nav .box__menu__list li {
   padding: 10px;
 }
 
-nav .box__menu ul span {
+nav .box__menu__list span {
+  color: hsl(208, 49%, 24%);
   font-size: 1.3em;
   font-weight: 500;
-  color: hsl(208, 49%, 24%);
 }
 
-nav .box__menu ul span i {
-  width: 10px;
+nav .box__menu__list span i {
   font-size: 0.5em;
+  width: 10px;
 }
 
-nav .box__menu ul li ul {
-  display: none;
+nav .box__menu__links {
   background-color: #c6c6c648;
+  color: hsl(237, 23%, 32%);
+  display: none;
+  font-size: 1.3em;
+  font-weight: 500;
   margin-top: 15px;
   padding: 15px 0;
-  color: hsl(237, 23%, 32%);
-  font-size: 1.3em;
-  font-weight: 500;
 }
-nav .box__menu ul li ul li:hover {
+nav .box__menu__links a:hover {
   color: #000000;
 }
 
-nav .box__menu .menu__login::before {
-  content: "";
-  width: 100%;
-  border-bottom: 0.1em solid rgba(0, 0, 0, 0.2);
+nav .box__menu__links a {
+  color: hsl(237, 23%, 32%);
 }
 
-nav .box__menu .menu__login {
-  height: 20%;
+nav .box__menu__login::before {
+  content: "";
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+nav .box__menu__login {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 20%;
   justify-content: space-between;
-  align-items: center;
 }
 
-nav .box__menu .menu__login button {
-  padding: 15px;
-  border-radius: 25px;
+nav .box__menu__login button {
   border: none;
-  width: 115px;
+  border-radius: 25px;
   font-size: 1.3em;
   font-weight: 700;
+  padding: 15px;
+  width: 115px;
 }
-nav .box__menu .menu__login button:hover {
+nav .box__menu__login button:hover {
   opacity: 0.8;
 }
 
-nav .menu__login button:first-child {
-  background-color: transparent;
+nav .box__menu__login button:first-child {
   color: hsl(208, 49%, 24%);
+  background-color: transparent;
 }
 
-nav .menu__login button:last-child {
+nav .box__menu__login button:last-child {
   background: linear-gradient(
     to right,
     hsl(13, 100%, 72%),
@@ -140,34 +143,34 @@ nav .menu__login button:last-child {
 }
 
 .action h1 {
-  font-size: 2.1em;
-  text-align: center;
   color: #ffffff;
   font-family: "Overpass", sans-serif;
+  font-size: 2.1em;
+  text-align: center;
 }
 
 .action h2 {
+  color: #ffffff;
   font-size: 1em;
   font-weight: 100;
   text-align: center;
-  color: #ffffff;
   padding-top: 5px;
 }
 
 .action__buttons {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   padding-top: 30px;
 }
 
 .action__buttons button {
-  border-radius: 20px;
   border: none;
-  padding: 14px 15px;
-  margin: 5px;
-  width: 115px;
+  border-radius: 20px;
   font-weight: 700;
+  margin: 5px;
+  padding: 14px 15px;
+  width: 115px;
 }
 
 .action__buttons button:first-child {
@@ -175,7 +178,7 @@ nav .menu__login button:last-child {
 }
 
 .action__buttons button:last-child {
-  color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
+  color: #ffffff;
 }
