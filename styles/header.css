@@ -72,6 +72,11 @@ nav .box__menu__list span {
   font-weight: 500;
 }
 
+nav .box__menu__list span a:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ffffff;
+}
+
 nav .box__menu__list span i {
   font-size: 0.5em;
   width: 10px;
@@ -118,6 +123,7 @@ nav .box__menu__login button {
 }
 nav .box__menu__login button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 nav .box__menu__login button:first-child {
@@ -171,6 +177,11 @@ nav .box__menu__login button:last-child {
   margin: 5px;
   padding: 14px 15px;
   width: 115px;
+}
+
+.action__buttons button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .action__buttons button:first-child {

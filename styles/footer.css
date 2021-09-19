@@ -26,6 +26,10 @@ footer ul li {
   color: rgb(146, 145, 145);
 }
 
+footer ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
 .attribution {
   background-color: hsl(240, 10%, 16%);
   font-size: 11px;
