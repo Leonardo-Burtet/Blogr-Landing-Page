@@ -9,10 +9,17 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
+## Desktop 
+<p align="center">
+  <img src="https://github.com/Leonardo-Burtet/Blogr-Landing-Page/blob/main/Frontend%20Mentor%20_%20%5BBlogr%5D.gif" width="400" height="480" />
+ </p>
+ 
+## Mobile
+ 
+ <p align="center"> 
+  <img src="https://github.com/Leonardo-Burtet/Blogr-Landing-Page/blob/main/Frontend%20Mentor%20_%20%5BBlogr%5D%20(1).gif" width="280" height="400" />
+  </p>
+  
 ### Links
 
 - Solution URL: [blogr-landing-page](http://blogr-landing-page-chi-eight.vercel.app/)
